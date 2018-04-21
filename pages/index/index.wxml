@@ -1,0 +1,96 @@
+<!--index.wxml-->
+
+<view class="container">
+  
+       <view class="swiper-container">
+            <swiper class="swiper_box" 
+                        autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" bindchange="" indicatorDots="{{indicatorDots}}" indicator-color="#FFE4B5" indicator-active-color="#fff">
+                <block wx:for="{{imgUrls}}" wx:key='key'>
+                    <swiper-item>
+                        <image bindtap="tapBanner" src="{{item}}" class="slide-image" width="750rpx" height="350rpx"/>
+                    </swiper-item>
+                </block>
+            </swiper>
+       </view>
+       <view class='content'>
+            <view class='header'>
+                <view class='headertitle' >
+                    专注网站建
+                </view>
+                <view class='headertitleMsg'>
+                   我们做什么？
+                </view>
+            </view>
+            <view class='contentMain'>
+                  <view>
+                      <view class='contentMsg' wx:for='{{contentdata}}' wx:key='index'>
+                          <view class='ImgContent'>
+                                <image src='{{item.img}}' class='contentImg'></image>
+                          </view>
+                          <!--
+                          <view class='contentMsgtitle'>
+                              {{item.title}}
+                          </view>
+                          -->
+                          <view class='contentMsgtitleMsg'>
+                               {{item.littleTitle}}
+                          </view>
+                            
+                      </view>
+                    
+                  </view>
+            </view>
+       </view>
+       <view class='content'>
+            <view class='header'>
+                <view class='headertitle' >
+                    成功案例
+                </view>
+                <view class='headertitleMsg'>
+                   国内最优秀的电商平台及相关系统服务商
+                </view>
+            </view>
+            <view class='contentMain' style='  margin-bottom: 50px;'>
+                  <view>
+                      <view class='contentMsg' wx:for='{{productdata}}' wx:key='index' data-id='{{item.id}}' bindtap="productGOdetails">
+                          <view class='Imgproduct'>
+                                <image src='{{item.img}}' class='producrImg'></image>
+                          </view>
+                          <view class='productMsgtitle' >
+                              {{item.title}}
+                          </view>
+                         
+                            
+                      </view>
+                    
+                  </view>
+            </view>
+       </view>
+       <!--
+         <view class='content companyContent'>
+            <view class='header'>
+                <view class='headertitle' >
+                    公司介绍
+                </view>
+                  <view class='headertitleMsg'>
+                   国内最优秀的电商平台及相关系统服务商
+                </view>
+            </view>
+            <view class='contentMain'>
+                  <view>
+                      <view class='contentCompanyMsg'>
+                            <image src='http://show.metinfo.cn/muban/M1032002/328/upload/201703/1488527711135158.jpg' style='width:750rpx;height:220rpx;'></image>
+                            <view class='companyIntroduction'>
+                                成立于2006年，坐落于湖北省武汉市，是中国优秀的互联网服务提供商。自成立以来，专注于高端网站建设、系统软件研发、营销策划推广、服务器部署运维，为客户的互联网应用提供一站式服务。我们秉持著以最专业的态度替客户进行网站建置、网页设计、网页程式撰写以及网络营销服务，我们深信只有将这些环节都做到完美，才能替客户从网路上带来最大的效益，并降低制作成本。
+                            </view>
+                            <view class='moreView' bindtap='companyGOdetails'>查看更多>></view>
+                      </view>
+                    
+                  </view>
+            </view>
+       </view>    
+          -->
+       <!-- <view animation="{{animationData}}" style="background:red;height:100rpx;width:100rpx"></view>-->
+         <include  src="../template/template.wxml"/>  
+      
+</view>

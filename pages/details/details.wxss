@@ -1,0 +1,48 @@
+/* pages/details/details.wxss */
+.company{
+    width:100%;
+    height:100%;
+}
+.company .ImgCompany{
+   width:100%;
+   height:100%
+}
+.company .ImgCompanyContent{
+    width:750rpx;
+    height:200rpx;
+}
+.productContainer{
+    width: 100%;
+    background: #fff;
+    text-align: center
+}
+.productImg{
+    width:680rpx;
+    height:1020rpx;
+    margin-bottom: 10px;
+}
+.productName{
+    width:100%;
+    height: 80rpx;
+    line-height: 80rpx;
+    background: #fff;
+    font-size:16px; 
+    text-align: center
+}
+.productData{
+    width:100%;
+    height: 60rpx;
+    line-height: 60rpx;
+    background: #fff;
+   font-size:14px;
+}
+.productDate{
+    width: 95%;
+    margin: auto;
+    
+}
+.productTitle{
+   
+    color:#1e8bc3;
+    
+}

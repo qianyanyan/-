@@ -1,0 +1,23 @@
+
+
+<view class='contact' style='width:100%;height:100rpx;position:fixed;bottom:0'>
+ <view  style='width:50%;float:left;height:100rpx;background:rgba(250,250,250,0.6);padding-top:20rpx'  bindtap="makePhoneCall" >
+    <view style='float:left;margin-left:60rpx;'>
+       <image style='width:70rpx;height:70rpx' src="../../resourse/img/phone.png"></image>
+     </view>
+     <view style='float:left'>
+        <view style='font-size:12px;height:35rpx;line-height:35rpx;color:#707070;'>专属热线</view>
+        <view style='font-size:12px;height:35rpx;line-height:35rpx;color:#707070'>{{mobile}}</view>
+     </view>
+ </view>
+ <view   style='width:50%;float:left;height:100rpx;background:rgba(255,0,0,0.6);padding-top:20rpx;text-align:center'>
+        <contact-button 
+        type="default-light" 
+        size="27"
+        session-from="weapp" style='width:100%;height:100%;font-szie:12px;color:#fff'>
+          联系我们
+        </contact-button>
+ </view>
+</view>
+
+

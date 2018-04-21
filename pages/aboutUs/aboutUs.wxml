@@ -1,0 +1,32 @@
+<view class='container'>
+    <view class='aboutUsTitle'>
+        <image src="../../resourse/img/aboutUs.png" class='aboutUsBg'></image>
+        <view  class='aboutUsMsg'>
+            为您创建可行,极具商业价值的品牌形象
+        </view>
+    </view>
+    <view class='aboutUsContentTitle'>
+       武汉兴诺佳盛科技有限公司
+    </view>
+    <view class='aboutUsContent'>
+       创建于2015年,是由一群拥有着实力强大的技术研发、创新精神的设计专才及思维活跃的营销策划团队组成。
+       我们为客户提供专业的界面方案，网站视觉设计，视觉包装. 服务项目涵盖了桌面平台、互联网服务以及电子消费类产品等，为客户提供从品牌设计、概念设计、用户体验、交互设计、图形设计到产品设计。 兴诺佳盛至今已服务客户：中国移动、松下研发、腾讯、百度、CCTV、ATA、四维图新、360、旅行淘、大唐移动、神州数码、正义网、神州数码、宇信易诚及大量创业公司等。
+    </view>
+     <view class='aboutUsContentTitle'>
+       我们的理念
+    </view>
+    <view class='aboutUsContent'>
+       我们致力于用户体验的持续提升，以用户为中心，力求视觉设计与交互设计的完美契合。并且我们以科学规范的流程，勤奋专注的态度，为客户提供全方位的设计服务。专注ui设计，以设计驱动企业价值的持续增长，实现您的商业目标！
+    </view>
+    <view class='aboutUsContentTitle'>
+       联系我们
+    </view>
+    <view class='contactUs'>
+        <input type="text" placeholder="请输入您的姓名"  class='contactUsInput'  id='name' bindinput='showMsg'/>
+        <input type="number" placeholder="请输入您的电话"  class='contactUsInput' id='phone' bindinput='showMsg'/>
+        <text wx:if='{{phoneFlag==false}}' class='phoneWarn'>*请填写正确的手机号码,以获得及时回复!*</text>
+        <input type="text" placeholder="请输入您的需求"  class='contactUsInput' id='demand' bindinput='showMsg'/>
+        <button type="" size="defaultSize"   bindtap="submitMsg"  class='contactUsBtn'>提交</button>
+    </view>
+
+</view>

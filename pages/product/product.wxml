@@ -1,0 +1,30 @@
+<!--logs.wxml-->
+<view class="container">
+   <view class="scrollContainer">
+        <scroll-view class="scrollNavbar" scroll-x>
+            <view class="scrollBox" wx:for-items="{{productCatalog}}"  wx:key='index'>
+                <view id="{{item.id}}" class="scrollNavbarItem {{activeCategoryId == item.id ? 'scrollItemOn' : ''}}" bindtap="tabClick">
+                    {{item.name}}
+                </view>
+            </view>
+        </scroll-view>
+    </view>
+    <view class='productItem'>
+         <view class='contentMain'>
+                  <view>
+                      <view class='contentMsg' wx:for='{{productdata}}' wx:key='index' data-id='{{item.id}}' bindtap="productGOdetails">
+                          <view class='Imgproduct'>
+                                <image src='{{item.img}}' class='producrImg'></image>
+                          </view>
+                          <view class='productMsgtitle' >
+                              {{item.title}}
+                          </view>
+                         
+                            
+                      </view>
+                    
+                  </view>
+            </view>
+    </view>
+ 
+</view>

@@ -1,0 +1,101 @@
+.scrollContainer{
+  width:100%;
+  height:90rpx;
+  line-height:90rpx;
+  background:#fff;
+  overflow: hidden;
+  white-space: nowrap; 
+  display: flex
+}
+.scrollNavbar{
+  height: 90rpx;
+  overflow: hidden
+}
+.scrollBox{
+  display: inline-block;
+  width: 160rpx;
+  text-align: center;
+  overflow: hidden;
+  font-size: 14px;
+  height:85rpx
+}
+.scrollNavbarItem{
+  height:80rpx;
+  line-height: 80rpx;
+  border-bottom: 1px solid #fff;
+}
+.scrollItemOn{
+  border-bottom: 1px solid #FF1493;
+}
+.productItem{
+  width: 100%;
+  height:100%;
+}
+.contentMain{
+  width:auto;
+  height:auto;
+  overflow: hidden;
+}
+.contentMain .contentMsg{
+  float:left;
+  width:50%;
+  text-align:center;
+  margin-top:20rpx;
+  
+}
+.contentMain  .contentMsgtitle{
+  height:80rpx;
+  line-height:80rpx;
+  text-align:center;
+  font-size:16px;
+  color:#2a333c
+}
+.contentMain .contentMsgtitleMsg{
+  line-height:50rpx;
+  font-size:12px;
+  color:#5e7387;
+  width:85%;
+  margin:auto;
+}
+.contentMain .contentImg{
+  width:64px;
+  height:64px;
+  vertical-align:middle;
+}
+.contentMain .ImgContent{
+  width:90px;
+  height:90px;
+  line-height:90px;
+  margin:auto;
+  border:1px solid #eee;
+  background:#fff;
+  border-radius:90px;
+  text-align:center
+}
+.contentMain .Imgproduct{
+  width:350rpx;
+  height:350rpx;
+  margin:auto
+}
+.contentMain .producrImg{
+  width:100%;
+  height: 100%;
+}
+.contentMain .productMsgtitle{
+  color:#1e8bc3;
+   margin-top:20rpx;
+}
+.contentMain .companyIntroduction{
+  line-height:50rpx;
+  font-size:12px;
+  width:100%;
+  text-indent: 2em;
+  color:#5e7387;
+}
+.contentMain .contentCompanyMsg{
+  width:95%;
+  height:auto;
+  margin:auto;
+  margin-top:45rpx;
+  
+}

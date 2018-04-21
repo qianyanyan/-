@@ -1,0 +1,7 @@
+<!--pages/details/details.wxml-->
+<import src="../induction-template/induction.wxml"/>
+<view class='container'>
+      <view style='width:100%;'>
+         <template is='product' data='{{...induction}}'></template>
+      </view>
+</view>

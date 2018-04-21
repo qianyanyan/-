@@ -1,0 +1,16 @@
+<!--pages/induction-template/induction.wxml-->
+<text>pages/induction-template/induction.wxml</text>
+<template name='company'>
+     
+</template>
+<template name='product'>
+   <view id='{{product.id}}' style='width:100%;'>
+        <view class='productName'>{{product.name}}</view>
+        <view class='productData'> 
+           <view class='productDate'>{{product.date}} <text class='productTitle'>案例展示</text></view>
+        </view>
+        <view wx:for='{{product.image}}' wx:key='index' class='productContainer'>
+           <image src="{{item}}"  class='productImg'></image>
+        </view>
+   </view>
+</template>
